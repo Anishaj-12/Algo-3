@@ -1,0 +1,114 @@
+FUNCTIONAL:
+
+function read_size() : integer
+var
+   n:integer;
+begin
+    repeat
+       read(n);
+    until (n<=0 or n>10)
+    return n;
+end
+procedure read_array(n:integer, var T:array_of integer)
+var
+  i:integer;
+begin
+    for i from 0 to n-1 do
+        read (T[i]);
+    end for
+
+end
+procedure read_array(n:integer, var T:array_of integer)
+var
+  j:integer;
+begin
+    for j from 0 to n do
+        read (T[j]);
+    end for
+
+end
+function dot_product (n,Ps, V1,V2: integer, T: array of integer, )
+var
+i : integer;
+begin 
+Ps=0
+for i from 0 to n-1 do
+for j from 0 to n-1 do
+Ps+= V1*V2;
+return Ps
+endfor
+endfor
+if(Ps=0)
+return(V1 et V2 sont Orthogonaux)
+endif
+end 
+
+Algorithm dot_product
+var
+V1,V2 :Array of integer[50];
+i,j,n,Ps : integer;
+
+n:= read_size();
+read_array(n,V1);
+read_array(n,V2);
+Return Ps
+End
+
+
+
+PROCEDURAL:
+
+function read_size() : integer
+var
+   n:integer;
+begin
+    repeat
+       read(n);
+    until (n<=0 or n>10)
+    return n;
+end
+procedure read_array(n:integer, var T:array_of integer)
+var
+  i:integer;
+begin
+    for i from 0 to n-1 do
+        read (T[i]);
+    end for
+
+end
+procedure read_array(n:integer, var T:array_of integer)
+var
+  j:integer;
+begin
+    for j from 0 to n do
+        read (T[j]);
+    end for
+
+end
+procedure dot_product (n,Ps, V1,V2: integer, T: array of integer, )
+var
+i : integer;
+begin 
+Ps=0
+for i from 0 to n-1 do
+for j from 0 to n-1 do
+Ps+= V1*V2;
+
+endfor
+endfor
+if(Ps=0)
+Write(V1 et V2 sont Orthogonaux)
+endif
+end 
+
+
+Algorithm dot_product
+var
+V1,V2 :Array of integer[50];
+i,j,n,Ps : integer;
+
+n:= read_size();
+read_array(n,V1);
+read_array(n,V2);
+dot_product (n,Ps,V1,V2)
+End
